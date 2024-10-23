@@ -15,7 +15,6 @@ if ($username == $valid_username && $password == $valid_password) {
     $response['redirect'] = 'biodata.php';
 } else {
     $response['success'] = false;
-    $response['message'] = "Login gagal! Nama pengguna atau kata sandi salah.";
 }
 
 echo json_encode($response);
